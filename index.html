@@ -23,18 +23,18 @@
     </nav>
   </header>
 
-  <nav class="index" aria-label="Section index">
-    <a href="#about">01 about</a>
-    <a href="#experience">02 experience</a>
-    <a href="#projects">03 projects</a>
-    <a href="#skills">04 skills</a>
-    <a href="#education">05 education</a>
-    <a href="#peaks">06 peaks</a>
+  <nav class="index" aria-label="Section index" role="tablist">
+    <a href="#about" id="tab-about" role="tab" aria-controls="about">01 about</a>
+    <a href="#experience" id="tab-experience" role="tab" aria-controls="experience">02 experience</a>
+    <a href="#projects" id="tab-projects" role="tab" aria-controls="projects">03 projects</a>
+    <a href="#skills" id="tab-skills" role="tab" aria-controls="skills">04 skills</a>
+    <a href="#education" id="tab-education" role="tab" aria-controls="education">05 education</a>
+    <a href="#peaks" id="tab-peaks" role="tab" aria-controls="peaks">06 peaks</a>
   </nav>
 
   <main>
 
-    <section id="about" class="frame">
+    <section id="about" class="frame" role="tabpanel" aria-labelledby="tab-about">
       <h2><span class="num">01</span> About</h2>
       <p>
         I'm a Computer Science student at Colorado School of Mines, graduating in 2026.
@@ -46,7 +46,7 @@
       </p>
     </section>
 
-    <section id="experience" class="frame">
+    <section id="experience" class="frame" role="tabpanel" aria-labelledby="tab-experience">
       <h2><span class="num">02</span> Experience</h2>
 
       <article class="entry">
@@ -64,7 +64,7 @@
       </article>
     </section>
 
-    <section id="projects" class="frame">
+    <section id="projects" class="frame" role="tabpanel" aria-labelledby="tab-projects">
       <h2><span class="num">03</span> Projects</h2>
 
       <div class="grid">
@@ -108,7 +108,7 @@
       </div>
     </section>
 
-    <section id="skills" class="frame">
+    <section id="skills" class="frame" role="tabpanel" aria-labelledby="tab-skills">
       <h2><span class="num">04</span> Skills</h2>
 
       <div class="grid skills-grid">
@@ -127,7 +127,7 @@
       </div>
     </section>
 
-    <section id="education" class="frame">
+    <section id="education" class="frame" role="tabpanel" aria-labelledby="tab-education">
       <h2><span class="num">05</span> Education</h2>
 
       <article class="entry">
@@ -136,11 +136,10 @@
           <span class="dates">2026</span>
         </div>
         <p class="entry-sub">Colorado School of Mines — Golden, CO</p>
-        <p>Major GPA: 3.55 / 4.00</p>
       </article>
     </section>
 
-    <section id="peaks" class="frame">
+    <section id="peaks" class="frame" role="tabpanel" aria-labelledby="tab-peaks">
       <h2><span class="num">06</span> Peaks</h2>
       <p class="section-note">
         A short, growing list of summits — plotted from memory, so treat the pins as
@@ -188,6 +187,7 @@
     </p>
   </footer>
 
+  <script src="nav.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
   <script src="peaks.js"></script>

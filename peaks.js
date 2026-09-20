@@ -332,4 +332,11 @@ document.addEventListener("DOMContentLoaded", () => {
   renderPeaksReadout(null);
   renderPeaksLegend();
   renderPeaksMap();
+
+  const peaksSection = document.getElementById("peaks");
+  if (peaksSection) {
+    peaksSection.addEventListener("tab:shown", () => {
+      if (leafletMap) leafletMap.invalidateSize();
+    });
+  }
 });

@@ -1,2 +1,8 @@
 .DS_Store
 Thumbs.db
+
+# Raw Strava/GPS exports land here before being reviewed, extension-stripped,
+# renamed, and moved into data/gpx/ (see peaks.js). Ignoring them at the root
+# (but not in data/gpx/) means a stray or duplicate export can't get swept up
+# by `git add .` before it's actually been processed.
+/*.gpx
