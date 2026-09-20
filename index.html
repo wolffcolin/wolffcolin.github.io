@@ -3,21 +3,193 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hello</title>
+  <title>Colin Wolff</title>
+  <meta name="description" content="Colin Wolff — Computer Science student at Colorado School of Mines. Resume, experience, and projects.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <h1>Hello, world.</h1>
+  <header class="frame header">
 
-  <p>
-    This page is live. That is the only thing it is here to prove.
-  </p>
+    <p class="label">// portfolio</p>
+    <h1>Colin Wolff</h1>
+    <p class="role">Computer Science Student — Colorado School of Mines</p>
 
-  <p>
-    Everything about it is yours to delete. Open Claude Code in this folder and
-    tell it what you actually want to build.
-  </p>
+    <nav class="links" aria-label="Contact and profiles">
+      <a href="mailto:colinsebastianwolff@gmail.com">[ email ]</a>
+      <a href="https://www.linkedin.com/in/colinswolff/" target="_blank" rel="noopener">[ linkedin ]</a>
+      <a href="https://github.com/wolffcolin" target="_blank" rel="noopener">[ github ]</a>
+      <a href="Colin-Wolff-Resume.pdf" target="_blank" rel="noopener">[ resume.pdf ]</a>
+    </nav>
+  </header>
 
+  <nav class="index" aria-label="Section index">
+    <a href="#about">01 about</a>
+    <a href="#experience">02 experience</a>
+    <a href="#projects">03 projects</a>
+    <a href="#skills">04 skills</a>
+    <a href="#education">05 education</a>
+    <a href="#peaks">06 peaks</a>
+  </nav>
+
+  <main>
+
+    <section id="about" class="frame">
+      <h2><span class="num">01</span> About</h2>
+      <p>
+        I'm a Computer Science student at Colorado School of Mines, graduating in 2026.
+        I like working close to data — building the pipelines, schemas, and interfaces
+        that turn messy or scattered records into something a team can actually query and
+        trust. Most recently I spent a summer doing data integration work in healthcare,
+        and outside of that I've built full-stack platforms across geospatial data,
+        API monitoring, and large-scale ingestion.
+      </p>
+    </section>
+
+    <section id="experience" class="frame">
+      <h2><span class="num">02</span> Experience</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Data Integration Intern</h3>
+          <span class="dates">Jun 2026 – Aug 2026</span>
+        </div>
+        <p class="entry-sub">Trellis Health — Portland, ME</p>
+        <ul>
+          <li>Owned a build-vs-configure evaluation of a HIPAA-compliant integration platform across 5 use cases spanning EHR, CRM, and patient messaging systems; translated requirements into a capability matrix and recommendations that shaped the scope handed to an external development partner.</li>
+          <li>Gathered requirements from physician, pharmacist, and operations stakeholders, translating clinical needs into technical recommendations.</li>
+          <li>Diagnosed the dependency blocking most use cases to a missing shared patient identifier and no persistent state layer, and proposed a crosswalk table schema mapping each system's patient ID.</li>
+          <li>Evaluated EHR API and webhook coverage, identified missing change events and inaccessible clinical data blocking a priority use case, and escalated findings directly to the vendor.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="frame">
+      <h2><span class="num">03</span> Projects</h2>
+
+      <div class="grid">
+
+        <article class="card">
+          <h3>API Change Detection Platform</h3>
+          <p class="stack">Angular 17 · Spring Boot · PostgreSQL · Docker</p>
+          <ul>
+            <li>Full-stack platform, built with a three-person team, that logs changes in third-party APIs to reduce the risk of breaking integrations.</li>
+            <li>Spring Boot + PostgreSQL backend storing and serving historical API data with version tracking.</li>
+            <li>Angular 17 frontend for visualizing updates and searching prior versions.</li>
+            <li>Modular architecture separating fetch logic, storage, and presentation.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Geospatial Wildlife Sightings Platform</h3>
+          <p class="stack">Angular 17 · Spring Boot · PostgreSQL · Python</p>
+          <ul>
+            <li>Turned raw GPS coordinates of animal sightings into a searchable, location-aware site using GeoPandas spatial joins against ArcGIS boundary layers — 200,000+ observations made queryable.</li>
+            <li>ETL pipelines ingesting and normalizing wildlife, park, and trail data into a PostgreSQL schema optimized for spatial filtering and pagination.</li>
+            <li>Full-stack Angular + Spring Boot interface for exploring and contributing sightings by species, park, or trail.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Healthcare Data Pipeline</h3>
+          <p class="stack">Python — for Recon Strategy</p>
+          <ul>
+            <li>Automated ingestion pipeline aggregating oncologist profiles and research activity from PubMed and other external APIs into a clean, analysis-ready dataset.</li>
+            <li>Validation and standardization layer ensuring consistency across heterogeneous inputs.</li>
+            <li>Scaled Python workflows to collect, normalize, and persist structured data for 200,000+ entities.</li>
+          </ul>
+        </article>
+
+        <article class="card placeholder">
+          <h3>More coming</h3>
+          <p>This section grows as I ship more. Check back.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="skills" class="frame">
+      <h2><span class="num">04</span> Skills</h2>
+
+      <div class="grid skills-grid">
+        <div class="card">
+          <h3>Languages</h3>
+          <p>C++, Python, TypeScript, HTML/CSS, Common Lisp</p>
+        </div>
+        <div class="card">
+          <h3>Frameworks</h3>
+          <p>Angular 17, Spring Boot</p>
+        </div>
+        <div class="card">
+          <h3>Tools</h3>
+          <p>Git, Docker, VS Code, Linux, Wireshark, PostgreSQL</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="frame">
+      <h2><span class="num">05</span> Education</h2>
+
+      <article class="entry">
+        <div class="entry-head">
+          <h3>B.S. Computer Science</h3>
+          <span class="dates">2026</span>
+        </div>
+        <p class="entry-sub">Colorado School of Mines — Golden, CO</p>
+        <p>Major GPA: 3.55 / 4.00</p>
+      </article>
+    </section>
+
+    <section id="peaks" class="frame">
+      <h2><span class="num">06</span> Peaks</h2>
+      <p class="section-note">
+        A short, growing list of summits — plotted from memory, so treat the pins as
+        approximate rather than surveyed.
+      </p>
+
+      <div class="map-frame">
+        <svg id="peaks-map" viewBox="0 0 800 480" preserveAspectRatio="xMidYMid meet"
+             role="img" aria-label="Map of the United States marking peaks climbed">
+          <text x="400" y="240" text-anchor="middle" class="map-fallback">Loading map…</text>
+        </svg>
+      </div>
+
+      <div class="peaks-readout" id="peaks-readout">
+        <p class="readout-name" id="readout-name">Hover a peak</p>
+        <dl class="readout-fields">
+          <div><dt>region</dt><dd id="readout-region">—</dd></div>
+          <div><dt>elevation</dt><dd id="readout-elevation">—</dd></div>
+          <div><dt>class</dt><dd id="readout-class">—</dd></div>
+        </dl>
+      </div>
+
+      <ul class="peaks-legend" id="peaks-legend"></ul>
+
+      <div class="frame peaks-detail" id="peaks-detail" hidden aria-labelledby="peaks-detail-heading">
+        <div class="peaks-detail-head">
+          <h3 id="peaks-detail-heading"></h3>
+          <button type="button" class="peaks-detail-close" id="peaks-detail-close" aria-label="Close track detail">×</button>
+        </div>
+        <dl class="readout-fields" id="peaks-detail-fields"></dl>
+        <div class="peaks-topo-map" id="peaks-topo-map" hidden></div>
+        <p class="peaks-detail-status" id="peaks-detail-status"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="frame">
+    <p>
+      <a href="mailto:colinsebastianwolff@gmail.com">colinsebastianwolff@gmail.com</a>
+      &nbsp;·&nbsp;
+      <a href="https://www.linkedin.com/in/colinswolff/" target="_blank" rel="noopener">linkedin.com/in/colinswolff</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/wolffcolin" target="_blank" rel="noopener">github.com/wolffcolin</a>
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="peaks.js"></script>
 </body>
 </html>
