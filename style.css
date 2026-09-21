@@ -108,6 +108,8 @@ nav.index {
 }
 
 nav.index a {
+  flex: 1;
+  text-align: center;
   border: 1px solid var(--line);
   padding: 0.5rem 0.9rem;
   cursor: pointer;
@@ -142,6 +144,11 @@ h2 {
 }
 
 h3 {
+  font-size: 1.05rem;
+  margin: 0 0 0.15rem;
+}
+
+h4 {
   font-size: 1.05rem;
   margin: 0 0 0.15rem;
 }
@@ -190,8 +197,13 @@ h3 {
   gap: 1.25rem;
 }
 
-.skills-grid {
-  grid-template-columns: repeat(3, 1fr);
+.subsection h3 {
+  font-size: 1.15rem;
+  margin: 0 0 0.9rem;
+}
+
+.subsection .card + .card {
+  margin-top: 1rem;
 }
 
 .card {
@@ -496,8 +508,7 @@ footer p {
     padding: 1.25rem 1.25rem;
   }
 
-  .grid,
-  .skills-grid {
+  .grid {
     grid-template-columns: 1fr;
   }
 
