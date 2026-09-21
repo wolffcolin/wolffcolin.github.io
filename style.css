@@ -1,6 +1,15 @@
 /* Wireframe / blueprint style: grayscale, boxed sections, monospace labels.
    No shadows, no gradients, no rounded corners — everything stays visibly boxed. */
 
+html {
+  /* Tabs vary a lot in content height, so whether a vertical scrollbar is
+     needed flips per tab. Without this, the scrollbar's own width silently
+     changes the available content width between tabs — force it to always
+     show so every box stays exactly the same width regardless of which tab
+     is active. */
+  overflow-y: scroll;
+}
+
 :root {
   color-scheme: light dark;
 
