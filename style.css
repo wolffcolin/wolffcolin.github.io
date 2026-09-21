@@ -70,15 +70,6 @@ a:hover {
   max-width: 880px;
 }
 
-.label {
-  font-family: "Courier New", ui-monospace, monospace;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.75rem;
-  color: var(--muted);
-  margin: 0 0 0.5rem;
-}
-
 /* --- header --- */
 
 header.header h1 {

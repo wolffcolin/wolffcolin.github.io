@@ -1,0 +1,3 @@
+URL checked: https://wolffcolin.github.io
+When: 2026-09-21 14:52
+What would have made this fail: Anything other than the correct HTML for my page in the fetch response, for example a 404 not found, anything other than a 200 code request and a correctly fetched page. I also checked on my browser, in addition to any 404 type errors being a failure here, if the formatting wasn't correct or what I was going for in terms of cleanliness.

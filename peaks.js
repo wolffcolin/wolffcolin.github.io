@@ -11,9 +11,9 @@
 const PEAKS = [
   { name: "Mt. Bierstadt", state: "CO", tag: "14er", elevationFt: 14065, class: "Class 2", lat: 39.5825, lon: -105.6686, gpx: null },
   { name: "The Citadel", state: "CO", tag: "13er", elevationFt: 13298, class: "Class 4", lat: 39.71562, lon: -105.91161, gpx: "the-citadel.gpx" },
-  { name: "North Arapaho Peak", state: "CO", tag: "13er", elevationFt: 13502, class: "Class 2", lat: 40.02656, lon: -105.65034, gpx: "arapaho-traverse.gpx" },
+  { name: "North Arapaho Peak", state: "CO", tag: "13er", elevationFt: 13502, class: "Class 4", lat: 40.02656, lon: -105.65034, gpx: "arapaho-traverse.gpx" },
   { name: "South Arapaho Peak", state: "CO", tag: "13er", elevationFt: 13397, class: "Class 2", lat: 40.01969, lon: -105.64979, gpx: "arapaho-traverse.gpx" },
-  { name: "Round Mountain", state: "WA", tag: null, elevationFt: 5284, class: null, lat: 48.32647, lon: -121.75083, gpx: "round-mountain.gpx" },
+  { name: "Round Mountain", state: "WA", tag: null, elevationFt: 5284, class: "Class 3", lat: 48.32647, lon: -121.75083, gpx: "round-mountain.gpx" },
   { name: "East Esmeralda Peak", state: "WA", tag: null, elevationFt: 8918, class: "Class 3", lat: 47.535, lon: -120.83, gpx: "east-esmeralda.gpx" },
 ];
 

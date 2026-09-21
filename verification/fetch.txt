@@ -11,6 +11,7 @@
 
   <header class="frame header">
 
+    <p class="label">// portfolio</p>
     <h1>Colin Wolff</h1>
     <p class="role">Computer Science Student — Colorado School of Mines</p>
 
@@ -34,17 +35,12 @@
     <section id="about" class="frame" role="tabpanel" aria-labelledby="tab-about">
       <h2><span class="num">01</span> About</h2>
       <p>
-        I put this site together to share a bit about my background, the work I've done,
-        and who I am outside of it.
-      </p>
-      <p>
-        I graduated with a BS in Computer Science from Colorado School of Mines in May 2026,
-        and I'm continuing there as a graduate student in the Computer Science 4+1 program.
-        I'm especially interested in healthcare tech, which I got pulled into during my
-        internship this summer and want to keep pursuing.
-      </p>
-      <p>
-        I'm originally from Washington state, and I love skiing, hiking and climbing.
+        I'm a Computer Science student at Colorado School of Mines, graduating in 2026.
+        I like working close to data — building the pipelines, schemas, and interfaces
+        that turn messy or scattered records into something a team can actually query and
+        trust. Most recently I spent a summer doing data integration work in healthcare,
+        and outside of that I've built full-stack platforms across geospatial data,
+        API monitoring, and large-scale ingestion.
       </p>
 
       <div class="grid about-columns">
@@ -130,7 +126,7 @@
 
         <article class="card">
           <h3>Healthcare Data Pipeline</h3>
-          <p class="stack">Python</p>
+          <p class="stack">Python — for Recon Strategy</p>
           <ul>
             <li>Automated ingestion pipeline aggregating oncologist profiles and research activity from PubMed and other external APIs into a clean, analysis-ready dataset.</li>
             <li>Validation and standardization layer ensuring consistency across heterogeneous inputs.</li>
